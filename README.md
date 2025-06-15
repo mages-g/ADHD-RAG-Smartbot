@@ -1,4 +1,4 @@
-# ADD-i-BOT aka ADHD-RAG-Smartbot: Local RAG System : Get Accurate psychiatric answers from your trusted documents locally
+# ADHD-RAG-Smartbot: Local RAG System : Get Accurate psychiatric answers from your trusted documents locally
 
 Created by [mages-g](https://github.com/mages-g)
 
