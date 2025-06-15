@@ -1,4 +1,4 @@
-# ADHD-RAG-Smartbot: Local RAG System : Get Accurate psychiatric answers from your trusted documents locally
+# ADD-i-BOT aka ADHD-RAG-Smartbot: Local RAG System : Get Accurate psychiatric answers from your trusted documents locally
 
 Created by [mages-g](https://github.com/mages-g)
 
@@ -7,23 +7,23 @@ A specialized psychiatric question-answering system that leverages large languag
 ## Screenshots
 
 <div align="center">
-  <img src="assets/images/Screenshot_1.png" alt="ADHD-RAG-Smartbot Interface" width="800"/>
-  <p><em>ADHD-RAG-Smartbot's clean and intuitive user interface</em></p>
+  <img src="assets/images/Screenshot_1.jpg" alt="ADD-i-bot Interface" width="800"/>
+  <p><em>ADD-i-bot's clean and intuitive user interface</em></p>
 </div>
 
 <div align="center">
-  <img src="assets/images/Screenshot_2.png" alt="ADHD-RAG-Smartbot Question" width="800"/>
+  <img src="assets/images/Screenshot_2.jpg" alt="ADD-i-bot Question" width="800"/>
   <p><em>Asking a psychiatric question about ADHD task management</em></p>
 </div>
 
 <div align="center">
-  <img src="assets/images/Screenshot_3.png" alt="ADHD-RAG-Smartbot Answer" width="800"/>
-  <p><em>ADHD-RAG-Smartbot providing a detailed answer with sources from the uploaded literature</em></p>
+  <img src="assets/images/Screenshot_3.jpg" alt="ADD-i-bot Answer" width="800"/>
+  <p><em>ADD-i-bot providing a detailed answer with sources from the uploaded literature</em></p>
 </div>
 
 <div align="center">
-  <img src="assets/images/Screenshot_4.png" alt="ADHD-RAG-Smartbot Follow up" width="800"/>
-  <p><em>ADHD-RAG-Smartbot providing a detailed answer with sources from the uploaded literature</em></p>
+  <img src="assets/images/Screenshot_4.jpg" alt="ADD-i-bot Follow up" width="800"/>
+  <p><em>ADD-i-bot following up on the same issue.</em></p>
 </div>
 ## Project Overview
 
