@@ -25,6 +25,7 @@ A specialized psychiatric question-answering system that leverages large languag
   <img src="assets/images/Screenshot_4.jpg" alt="ADD-i-bot Follow up" width="800"/>
   <p><em>ADD-i-bot following up on the same issue.</em></p>
 </div>
+
 ## Project Overview
 
 This project creates an end-to-end local RAG (Retrieval-Augmented Generation) psychiatric chatbot that:
