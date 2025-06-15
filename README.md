@@ -1,44 +1,48 @@
-# MediRAG: Local RAG System : Get Accurate medical answers from your trusted documents locally
+# ADHD-RAG-Smartbot: Local RAG System : Get Accurate psychiatric answers from your trusted documents locally
 
-Created by [supermax01](https://github.com/supermax01)
+Created by [mages-g](https://github.com/mages-g)
 
-A specialized medical question-answering system that leverages large language models (LLMs) and retrieval-augmented generation (RAG) to provide accurate medical information based on trusted medical literature. This system runs entirely on your local machine, giving you full control over your data and privacy.
+A specialized psychiatric question-answering system that leverages large language models (LLMs) and retrieval-augmented generation (RAG) to provide accurate psychiatric information based on trusted psychiatric literature. This system runs entirely on your local machine, giving you full control over your data and privacy.
 
 ## Screenshots
 
 <div align="center">
-  <img src="assets/images/1.png" alt="MediRAG Interface" width="800"/>
-  <p><em>MediRAG's clean and intuitive user interface</em></p>
+  <img src="assets/images/Screenshot_1.png" alt="ADHD-RAG-Smartbot Interface" width="800"/>
+  <p><em>ADHD-RAG-Smartbot's clean and intuitive user interface</em></p>
 </div>
 
 <div align="center">
-  <img src="assets/images/2.png" alt="MediRAG Question" width="800"/>
-  <p><em>Asking a medical question about diabetes medications</em></p>
+  <img src="assets/images/Screenshot_2.png" alt="ADHD-RAG-Smartbot Question" width="800"/>
+  <p><em>Asking a psychiatric question about ADHD task management</em></p>
 </div>
 
 <div align="center">
-  <img src="assets/images/3.png" alt="MediRAG Answer" width="800"/>
-  <p><em>MediRAG providing a detailed answer with sources from the medical literature</em></p>
+  <img src="assets/images/Screenshot_3.png" alt="ADHD-RAG-Smartbot Answer" width="800"/>
+  <p><em>ADHD-RAG-Smartbot providing a detailed answer with sources from the uploaded literature</em></p>
 </div>
 
+<div align="center">
+  <img src="assets/images/Screenshot_4.png" alt="ADHD-RAG-Smartbot Follow up" width="800"/>
+  <p><em>ADHD-RAG-Smartbot providing a detailed answer with sources from the uploaded literature</em></p>
+</div>
 ## Project Overview
 
-This project creates an end-to-end local RAG (Retrieval-Augmented Generation) medical chatbot that:
+This project creates an end-to-end local RAG (Retrieval-Augmented Generation) psychiatric chatbot that:
 
-1. **Extracts knowledge** from medical PDFs and documents
+1. **Extracts knowledge** from psychiatric PDFs and documents
 2. **Processes and chunks** the text into manageable segments
 3. **Generates embeddings** using sentence transformers
 4. **Stores vectors** in Pinecone for efficient semantic search
-5. **Retrieves relevant context** when a medical question is asked
+5. **Retrieves relevant context** when a psychiatric question is asked
 6. **Generates accurate answers** using Ollama's LLMs with the retrieved context
 
-The system is designed to provide factual, context-based responses to medical queries while citing the sources of information, making it suitable for educational purposes and preliminary medical information lookup.
+The system is designed to provide factual, context-based responses to psychiatric queries while citing the sources of information, making it suitable for educational purposes and preliminary psychiatric information lookup.
 
 ## What is RAG (Retrieval-Augmented Generation)?
 
 RAG combines the power of large language models with information retrieval systems to generate more accurate, factual, and contextually relevant responses:
 
-1. **Retrieval**: When a question is asked, the system searches through a knowledge base (in this case, your medical PDFs) to find the most relevant information.
+1. **Retrieval**: When a question is asked, the system searches through a knowledge base (in this case, your psychiatric PDFs) to find the most relevant information.
 
 2. **Augmentation**: The retrieved information is added to the prompt sent to the language model.
 
@@ -47,14 +51,14 @@ RAG combines the power of large language models with information retrieval syste
 ### Benefits of Local RAG
 
 - **Accuracy**: Responses are grounded in specific documents you provide, reducing hallucinations
-- **Privacy**: Your medical documents and queries never leave your computer
+- **Privacy**: Your psychiatric documents and queries never leave your computer
 - **Customization**: You control exactly what knowledge the system has access to
 - **Transparency**: The system shows you the sources it used to generate each answer
 - **Cost-effective**: No need for expensive API calls to cloud-based LLMs
 
 ## How It Works
 
-1. **Document Ingestion**: The system reads and processes any PDF files placed in the `data/` directory. These can be medical textbooks, research papers, or any text-based medical information.
+1. **Document Ingestion**: The system reads and processes any PDF files placed in the `data/` directory. These can be psychiatric textbooks, research papers, or any text-based psychiatric information.
 
 2. **Knowledge Base Creation**: The content is split into chunks and converted into vector embeddings, which are stored in Pinecone.
 
@@ -71,9 +75,9 @@ RAG combines the power of large language models with information retrieval syste
 ## Key Features
 
 - **Fully Local Processing**: All components run on your machine, with no data sent to external APIs
-- **Document Processing**: Automatically extracts and processes text from medical PDFs
+- **Document Processing**: Automatically extracts and processes text from psychiatric PDFs
 - **Vector Search**: Uses semantic search to find the most relevant information for each query
-- **Context-Aware Responses**: Generates answers based only on the retrieved medical literature
+- **Context-Aware Responses**: Generates answers based only on the retrieved psychiatric literature
 - **Source Attribution**: Provides the sources of information used to generate each answer
 - **Modular Architecture**: Easily extensible with new data sources or models
 - **Interactive Web Interface**: User-friendly Streamlit interface for asking questions
@@ -90,9 +94,9 @@ RAG combines the power of large language models with information retrieval syste
 ## Project Structure
 
 ```
-End-to-End-Medical-Chatbot/
-├── data/                  # Directory for medical PDF files
-│   └── README.md          # Instructions for adding medical PDFs
+End-to-End-psychiatric-Chatbot/
+├── data/                  # Directory for psychiatric PDF files
+│   └── README.md          # Instructions for adding psychiatric PDFs
 ├── src/                   # Source code
 │   ├── embeddings/        # Embeddings generation module
 │   ├── llm/               # LLM integration with Ollama
@@ -109,13 +113,13 @@ End-to-End-Medical-Chatbot/
 
 ## Complete Setup Guide
 
-Follow these steps to set up and run the medical chatbot on your device:
+Follow these steps to set up and run the psychiatric chatbot on your device:
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/supermax01/End-to-End-Medical-Chatbot.git
-cd End-to-End-Medical-Chatbot
+git clone https://github.com/mages-g/End-to-End-psychiatric-Chatbot.git
+cd End-to-End-psychiatric-Chatbot
 ```
 
 ### 2. Set Up Python Environment
@@ -169,11 +173,11 @@ ollama pull phi4-mini  # Alternative model
 ollama list
 ```
 
-### 6. Add Medical PDF Files
+### 6. Add psychiatric PDF Files
 
-1. Place your medical PDF files in the `data/` directory
+1. Place your psychiatric PDF files in the `data/` directory
    - The app will create this directory automatically if it doesn't exist
-   - You can use medical textbooks, research papers, or any PDF with medical information
+   - You can use psychiatric textbooks, research papers, or any PDF with psychiatric information
 2. Make sure you have the appropriate rights to use these documents
 
 ### 7. Verify Your Setup
@@ -203,7 +207,7 @@ The application will:
 1. Automatically open in your default web browser at http://localhost:8501
 2. Process all PDF files in your `data/` directory
 3. Generate and store embeddings in Pinecone
-4. Start the chat interface where you can ask medical questions
+4. Start the chat interface where you can ask psychiatric questions
 
 If you want to access the app from other devices on your network:
 
@@ -262,23 +266,23 @@ def get_qa_prompt():
 
 ## Example Questions
 
-- "What are the symptoms of diabetes?"
-- "How is pneumonia diagnosed?"
-- "What treatments are available for migraines?"
-- "What are the side effects of ibuprofen?"
+- "Why am I so distracted after coffee?"
+- "How to manage my time more efficiently?"
+- "What are best principles to follow to finish my work?"
+- "What executive function am I missing?"
 
 ## Limitations
 
 - The chatbot can only answer based on the information in the PDF files you provide
-- It is designed for informational purposes only and should not replace professional medical advice
+- It is designed for informational purposes only and should not replace professional psychiatric advice
 - Response quality depends on the quality and coverage of the source documents
 - The system requires Ollama to be installed and running on your machine
 - While the LLM and processing run locally, Pinecone is a cloud service that stores your vector embeddings
 
 ## Future Improvements
 
-- Integration with medical knowledge graphs
+- Integration with psychiatric knowledge graphs
 - Support for multi-modal inputs (images, lab results)
 - User feedback loop for answer quality improvement
-- Expanded medical document corpus
+- Expanded psychiatric document corpus
 - Option for fully local vector database (like Chroma or FAISS) instead of Pinecone
